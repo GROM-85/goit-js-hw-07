@@ -20,12 +20,11 @@ function createLightbox(){
     return new SimpleLightbox(".gallery a",{
         captionDelay: 250,
         captionsData:"alt",
-        
+        scrollZoom:false,   
     });
 }
 
 
 makeGallery(gallery);
-
-let lightbox = createLightbox();
+createLightbox();
 
